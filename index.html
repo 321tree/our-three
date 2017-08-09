@@ -1,31 +1,72 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Document</title>
-   <!--  <link rel="stylesheet" href="css/base.css"> -->
-    <link rel="stylesheet" href="css/animate.min.css">
-    <style>
-    .myDiv{
-        width:50%;
-        margin:0 auto;
-        text-align: center;
-        border:1px solid #ccc;
-    }
+    <meta name="viewport" content="width=device-width,initial-scale=1, user-scalable=no">
 
-    .text{
-        color:#EE4545;
-        font-size:2em;
-        animation:.5s;
-    }
-    </style>
+    <title>Document</title>
+   <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/animate.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
 </head>
 <body>
 <div class="myDiv">
     <p class="animated fadeInDown text">hello!</p>
-    <p class="animated fadeInLeft" style="animation-delay:1s">杨妹子</p>
-    <p class="animated fadeInRight" style="animation-delay:1s">杨金凤</p>
-   
+    <p class="animated fadeInLeft name">today is Satrday.</p>
+    <p class="animated fadeInRight name">tomorrow is Sunday.</p>  
 </div> 
+    
+<div class="my2">
+    <img src="image/IMG_1002.JPG" alt="">
+</div>
+<script>
+       function classA {
+
+       }
+
+       classA.prototype.fun1 = function(){
+        document.write("i am fun1");
+       }
+
+       var a = new classA();
+       var b = new classA();
+
+       a.fun1();
+       b.fun1();
+
+       
+    </script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kaiwanxiao</title>
+</head>
+<body>
+    <script>
+        CF();
+        function CF(){
+            var r = confirm("亲，欢迎来到我们的认猪活动，请问你是猪吗？（温馨提示：只有按确定按钮确定你是猪了才能退出本次活动）");
+            if(r == true){
+               PM(); 
+            }else{
+                CF();
+            } 
+        }
+
+        function PM(){
+            var p = prompt("亲，为了确认你的真实身份。请输入：我是猪");
+            if(p == "我是猪"){
+                alert("亲，恭喜你，通过身份认证，成为本次最尊贵的猪。")
+            }else{
+                PM();
+                 }    
+             }
+
+    </script>
 </body>
 </html>
